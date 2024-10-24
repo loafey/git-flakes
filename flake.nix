@@ -12,6 +12,7 @@
 
     stremio.url = "./stremio";
     display3d.url = "./display3d";
+    klassy.url = "./klassy";
 
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -29,6 +30,7 @@
             inputs.nfs-check.defaultPackage."${pkgs.system}"
             inputs.grompt-prompt.defaultPackage."${pkgs.system}"
             inputs.stremio.defaultPackage."${pkgs.system}"
+            inputs.klassy.defaultPackage."${pkgs.system}"
             inputs.display3d.defaultPackage."${pkgs.system}"
             inputs.bunbun.packages."${pkgs.system}".default
             # inputs.hey.defaultPackage."${pkgs.system}"
