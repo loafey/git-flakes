@@ -7,7 +7,7 @@
     nfs-check.url = "github:loafey/nfs-check";
     # rrompt.url = "git+ssh://git@github.com/loafey/rrompt.git";
     queercat.url = "github:Elsa002/queercat";
-    bunbun.url = "github:devraza/bunbun";
+    # bunbun.url = "github:devraza/bunbun";
     # hey.url = "git+https://git.blek.codes/blek/hey";
 
     stremio.url = "./stremio";
@@ -32,7 +32,7 @@
             inputs.stremio.defaultPackage."${pkgs.system}"
             inputs.klassy.defaultPackage."${pkgs.system}"
             # inputs.display3d.defaultPackage."${pkgs.system}"
-            inputs.bunbun.packages."${pkgs.system}".default
+            # inputs.bunbun.packages."${pkgs.system}".default
             # inputs.hey.defaultPackage."${pkgs.system}"
           ];
         }
