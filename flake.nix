@@ -18,23 +18,25 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
 
-
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
-    with flake-utils.lib; eachSystem allSystems
-      (system:
-        let pkgs = nixpkgs.legacyPackages.${system}; in
-        rec {
-          packages = [
-            inputs.queercat.defaultPackage."${pkgs.system}"
-            inputs.grompt.defaultPackage."${pkgs.system}"
-            inputs.nfs-check.defaultPackage."${pkgs.system}"
-            inputs.grompt-prompt.defaultPackage."${pkgs.system}"
-            inputs.stremio.defaultPackage."${pkgs.system}"
-            inputs.klassy.defaultPackage."${pkgs.system}"
-            # inputs.display3d.defaultPackage."${pkgs.system}"
-            # inputs.bunbun.packages."${pkgs.system}".default
-            # inputs.hey.defaultPackage."${pkgs.system}"
-          ];
-        }
-      );
+    with flake-utils.lib;
+    eachSystem allSystems (system:
+      let
+        pkgs = import nixpkgs {
+          system = "${system}";
+          config.allowUnfree = true;
+        };
+      in rec {
+        packages = [
+          inputs.queercat.defaultPackage."${pkgs.system}"
+          inputs.grompt.defaultPackage."${pkgs.system}"
+          inputs.nfs-check.defaultPackage."${pkgs.system}"
+          inputs.grompt-prompt.defaultPackage."${pkgs.system}"
+          inputs.stremio.defaultPackage."${pkgs.system}"
+          inputs.klassy.defaultPackage."${pkgs.system}"
+          # inputs.display3d.defaultPackage."${pkgs.system}"
+          # inputs.bunbun.packages."${pkgs.system}".default
+          # inputs.hey.defaultPackage."${pkgs.system}"
+        ];
+      });
 }
