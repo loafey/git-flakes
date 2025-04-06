@@ -7,6 +7,7 @@
     nfs-check.url = "github:loafey/nfs-check";
     # rrompt.url = "git+ssh://git@github.com/loafey/rrompt.git";
     queercat.url = "github:Elsa002/queercat";
+    launcher.url = "github:loafey/launcher";
     # bunbun.url = "github:devraza/bunbun";
     # hey.url = "git+https://git.blek.codes/blek/hey";
 
@@ -34,6 +35,7 @@
           inputs.grompt-prompt.defaultPackage."${pkgs.system}"
           inputs.stremio.defaultPackage."${pkgs.system}"
           inputs.klassy.defaultPackage."${pkgs.system}"
+          inputs.launcher.defaultPackage."${pkgs.system}"
           # inputs.display3d.defaultPackage."${pkgs.system}"
           # inputs.bunbun.packages."${pkgs.system}".default
           # inputs.hey.defaultPackage."${pkgs.system}"
