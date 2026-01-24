@@ -2,10 +2,12 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 0,
-        "narHash": "sha256-AlcmCXJZPIlO5dmFzV3V2XF6x/OpNWUV8Y/FMPGd8Z4=",
-        "path": "/nix/store/lsy6c2f9alj2gkjj36h754kk63x6701l-source",
-        "type": "path"
+        "lastModified": 1769237874,
+        "narHash": "sha256-saOixpqPT4fiE/M8EfHv9I98f3sSEvt6nhMJ/z0a7xI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "523257564973361cc3e55e3df3e77e68c20b0b80",
+        "type": "github"
       },
       "original": {
         "id": "nixpkgs",
@@ -21,17 +23,17 @@
     "stremio": {
       "flake": false,
       "locked": {
-        "lastModified": 1711535500,
-        "narHash": "sha256-pz1mie0kJov06GcyitvZu5Gg0Vz3YnigjDqFujGKqZM=",
-        "ref": "refs/tags/v4.4.168",
-        "rev": "7cd1203b6364edee148b24a08830e3f57ebe1029",
-        "revCount": 847,
+        "lastModified": 1768306559,
+        "narHash": "sha256-YjaR0Y4tVVfp0Jj+Q5SnD8BoT/VtPMrZYeABnqd9BPk=",
+        "ref": "refs/tags/v4.4.171",
+        "rev": "3d7ce71cd638e20f69b958d1e8444cd7c6297f37",
+        "revCount": 877,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Stremio/stremio-shell/"
       },
       "original": {
-        "ref": "refs/tags/v4.4.168",
+        "ref": "refs/tags/v4.4.171",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Stremio/stremio-shell/"

@@ -14,14 +14,19 @@
       url = "https://github.com/Stremio/stremio-shell/";
       flake = false;
       submodules = true;
-      ref = "refs/tags/v4.4.168";
+      ref = "refs/tags/v4.4.171";
     };
 
   };
 
   outputs = { self, nixpkgs, stremio }: {
     packages.x86_64-linux.stremio-patch =
-      with import nixpkgs { system = "x86_64-linux"; };
+      with import nixpkgs {
+        system = "x86_64-linux";
+        config.permittedInsecurePackages = [
+          "qtwebengine-5.15.19"
+        ];
+      };
       stdenv.mkDerivation {
         makeFlags = [ "PREFIX=$(out)" ];
         name = "stremio";
