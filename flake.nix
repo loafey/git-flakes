@@ -33,7 +33,7 @@
           inputs.grompt.defaultPackage."${pkgs.system}"
           inputs.nfs-check.defaultPackage."${pkgs.system}"
           inputs.grompt-prompt.defaultPackage."${pkgs.system}"
-          inputs.stremio.defaultPackage."${pkgs.system}"
+          # inputs.stremio.defaultPackage."${pkgs.system}"
           inputs.klassy.defaultPackage."${pkgs.system}"
           inputs.launcher.defaultPackage."${pkgs.system}"
           # inputs.display3d.defaultPackage."${pkgs.system}"
